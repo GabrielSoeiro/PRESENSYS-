@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cadastro de Alunos</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+</head>
+
+<body>
+
+  <button class="menu-mobile" id="menuMobile">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+
+    <div class="logo">
+      <i class="fa-solid fa-microchip"></i>
+
+      <div>
+        <h2>Presença</h2>
+        <p>Inteligente</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">
+        <i class="fa-solid fa-chart-line"></i>
+        Dashboard
+      </a>
+
+      <a href="cadastro.html">
+        <i class="fa-solid fa-user-plus"></i>
+        Cadastro
+      </a>
+    </nav>
+
+  </aside>
+
+  <main class="content">
+
+    <header class="topbar">
+      <div>
+        <h1>Cadastro de Alunos</h1>
+        <p>Sistema de reconhecimento facial</p>
+      </div>
+    </header>
+
+    <section class="presencas cadastro">
+
+      <div class="section-title">
+        <h2>Novo Aluno</h2>
+      </div>
+
+      <form id="formCadastro">
+
+        <input
+          type="text"
+          id="nomeAluno"
+          placeholder="Nome do aluno"
+          required
+        />
+
+        <div class="acoes-upload">
+
+          <label class="custom-file-upload" for="cameraInput">
+            <i class="fa-solid fa-camera"></i>
+            Tirar Foto
+          </label>
+
+          <input
+            type="file"
+            id="cameraInput"
+            accept="image/*"
+            capture="user"
+            hidden
+          />
+
+          <label class="custom-file-upload" for="fotoAluno">
+            <i class="fa-solid fa-image"></i>
+            Escolher Arquivo
+          </label>
+
+          <input
+            type="file"
+            id="fotoAluno"
+            accept="image/*"
+            hidden
+          />
+
+        </div>
+
+        <div class="camera-container">
+          <img
+            id="preview"
+            class="preview-img"
+            alt="Pré-visualização da foto"
+          >
+
+          <div class="preview-placeholder" id="previewPlaceholder">
+            <i class="fa-solid fa-image"></i>
+            <p>Nenhuma foto selecionada</p>
+          </div>
+        </div>
+
+        <button type="submit">
+          <i class="fa-solid fa-user-plus"></i>
+          Cadastrar
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

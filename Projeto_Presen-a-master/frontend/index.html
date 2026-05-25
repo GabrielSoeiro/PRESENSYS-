@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Presença Inteligente</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <button class="menu-mobile" id="menuMobile">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+
+    <div class="logo">
+      <i class="fa-solid fa-microchip"></i>
+
+      <div>
+        <h2>Presença</h2>
+        <p>Inteligente</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">
+        <i class="fa-solid fa-chart-line"></i>
+        Dashboard
+      </a>
+
+      <a href="cadastro.html">
+        <i class="fa-solid fa-user-plus"></i>
+        Cadastro
+      </a>
+    </nav>
+
+  </aside>
+
+  <main class="content">
+
+    <header class="topbar">
+      <div>
+        <h1>Dashboard</h1>
+        <p>Sistema acadêmico inteligente</p>
+      </div>
+
+      <div class="status-online">
+        <span></span>
+        Sistema Online
+      </div>
+    </header>
+
+    <section class="cards">
+
+      <div class="card">
+        <div class="icon purple">
+          <i class="fa-solid fa-users"></i>
+        </div>
+
+        <div>
+          <h3>Total Presenças</h3>
+          <h2 id="totalPresencas">0</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon green">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div>
+          <h3>Status</h3>
+          <h2 id="statusSistema">Online</h2>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="presencas">
+      <div class="section-title">
+        <h2>Últimas Presenças</h2>
+      </div>
+
+      <div id="listaPresencas"></div>
+    </section>
+
+    <section class="presencas monitoramento">
+      <div class="section-title">
+        <h2>Monitoramento</h2>
+      </div>
+
+      <div class="presenca-item">
+        <div class="presenca-info">
+          <h3>Câmera Principal</h3>
+          <p>Reconhecimento facial ativo</p>
+        </div>
+
+        <div class="status-presente">ONLINE</div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
